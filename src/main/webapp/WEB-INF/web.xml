@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+	<display-name>BluemixBoutique</display-name>
+	<servlet>
+		<servlet-name>JAX-RS Servlet</servlet-name>
+		<!--<servlet-class>com.ibm.websphere.jaxrs.server.IBMRestServlet</servlet-class> -->
+		<servlet-class>org.apache.wink.server.internal.servlet.RestServlet</servlet-class>
+		<init-param>
+			<param-name>applicationConfigLocation</param-name>
+			<param-value>/WEB-INF/resources</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JAX-RS Servlet</servlet-name>
+		<url-pattern>/api/*</url-pattern>
+	</servlet-mapping>
+	<persistence-context-ref>	
+    	<persistence-context-ref-name>
+		    bluemixboutiquepu/entitymanager
+	    </persistence-context-ref-name>
+	    <persistence-unit-name>
+		    BluemixBoutiquePU
+	    </persistence-unit-name>
+    </persistence-context-ref>
+  
+  	<resource-ref>
+		<description>
+		</description>
+		<res-ref-name>jdbc/bluemixboutiquesql</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+		<res-sharing-scope>Shareable</res-sharing-scope>
+	</resource-ref>
+</web-app>
