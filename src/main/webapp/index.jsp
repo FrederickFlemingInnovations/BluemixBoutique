@@ -63,12 +63,12 @@
 				<TR>
 					<TD align="left" colspan=2>
 	
-					<FORM action="" method="POST"><INPUT size="40" type="text"
+					<FORM action="" method="POST"><INPUT size="30" type="text"
 						name="address" value="IBM Dr. Durham, NC"> &nbsp; &nbsp; &nbsp; &nbsp; 
 						<br> <INPUT type="button" onclick="document.getElementById('addressBox').style.display='none';document.getElementById('fade').style.display='none'" value="Cancel">
-						<INPUT type="submit" value="Validate">
+						<INPUT type="submit" disabled value="Validate">
 						</br><INPUT type="hidden" name="action"
-						value="login"></FORM>
+						value="login">&nbsp; <i>Not implemented yet!</i></FORM>
 					</TD>
 				</TR>
 			</TBODY>
