@@ -27,10 +27,8 @@ function loadComments(){
 }
 
 
-function newComment(comment) {
-
-	var key = window.event.keyCode;
-
+function newComment(comment, e) {
+	key = e.keyCode;
     if (key == 13) { //enter key
     	xhrGet(COMMENTS_DATA + "?action=addComment&itemNumber="+selectedItem+"&comment=" + comment.value , function(data){
     		loadComments();

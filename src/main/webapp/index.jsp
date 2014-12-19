@@ -123,7 +123,7 @@
 					</div>
 					<div   class="Grid-cell comment">
 						
-                		<input class="newComment" type="textarea" onkeypress="newComment(this);" />
+                		<input class="newComment" type="textarea" onKeyDown="newComment(this, event);" />
 					</div>
 					
 
