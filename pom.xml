@@ -56,7 +56,7 @@ restricted by GSA ADP Schedule Contract with IBM Corp.
     	<artifactId>wink</artifactId>
     	<version>1.4</version>
     	<type>pom</type>
-    	<scope>provided</scope>
+    	<!--<scope>provided</scope>-->
     </dependency>
     <dependency>
     	<groupId>mysql</groupId>
