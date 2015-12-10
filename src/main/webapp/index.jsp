@@ -79,7 +79,7 @@
 
 
 
-	<p class="description">This sample demonstrates communication to SQLDB and Cloudant services</p>
+	<p class="description">This Java sample demonstrates communication to SQLDB and Cloudant services</p>
 
 	<div class="sectionHeader">
 		<div class="sectionName"><span class = "blue">Catalog</span>
